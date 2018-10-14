@@ -1,0 +1,10 @@
+Consider this folder as the root folder
+
+1) Creating namespace
+kubectl create -f namespace.yml #here -f means filename
+
+2) Created node project called nominator
+To build the image and run a container docker-compose up -d
+To check the address docker inspect [NAME OF CONTAINER], search by ipaddress and access the application on port 8000 as defined inside gulpfile
+
+
