@@ -3,5 +3,5 @@ version: '2'
 services:
   nominator:
     build: .
-    image: piffer/nominator
+    image: piffer/nominator2
 

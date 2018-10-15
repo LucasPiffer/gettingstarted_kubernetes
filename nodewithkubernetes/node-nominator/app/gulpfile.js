@@ -5,7 +5,7 @@ gulp.task('start', () => {
    nodemon({
      script: "./app.js",
      env: {
-       PORT: "8000"
+       PORT: 8000
      }
    })
 })

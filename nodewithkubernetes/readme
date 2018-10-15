@@ -7,4 +7,9 @@ kubectl create -f namespace.yml #here -f means filename
 To build the image and run a container docker-compose up -d
 To check the address docker inspect [NAME OF CONTAINER], search by ipaddress and access the application on port 8000 as defined inside gulpfile
 
+3) Alternatively build the image (Dockerfile): docker build . -t piffer/nominatior from within node-nominator project
 
+4) Create POD and create it with kubectl. Using namespace mynodeapp (-f for file)
+kubectl create -f data-tier-pod.yml --namespace mynodeapp
+
+5) kubectl logs maternity-data-tier --namespace mynodeapp -- to check logs (if everything is ok you should see a message saying running on port 8000 indicating node is ok)

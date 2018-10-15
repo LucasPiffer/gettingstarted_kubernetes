@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: maternity-data-tier
+  labels:
+    app: maternity-data-tier
+    tier: data
+spec:
+  containers:
+    - name: nominator
+      image: "piffer/nominator2:latest"
+      imagePullPolicy: IfNotPresent
+      ports:
+        - containerPort: 80
+          protocol: TCP

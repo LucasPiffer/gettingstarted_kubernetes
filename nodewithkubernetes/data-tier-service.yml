@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: maternity-data-tier
+  labels:
+    app: maternity-data-tier
+spec:
+  selector:
+    app: maternity-data-tier
+    tier: data
+  ports:
+    - port: 8000
+      protocol: TCP
+  type: NodePort                 
